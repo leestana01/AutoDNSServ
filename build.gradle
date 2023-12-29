@@ -32,6 +32,10 @@ dependencies {
 	testImplementation 'org.springframework.security:spring-security-test'
 }
 
+bootJar {
+	mainClassName = 'kr.klr.dnsserv.DnsservApplication'
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
