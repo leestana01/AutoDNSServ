@@ -1,4 +1,4 @@
-package Domain.Dto;
+package kr.klr.dnsserv.Dto;
 
 import lombok.Data;
 

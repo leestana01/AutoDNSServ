@@ -1,12 +1,10 @@
-package Service;
+package kr.klr.dnsserv.Service;
 
-import Domain.Dto.DNSRecordDTO;
-import Domain.Dto.DeleteDomainDTO;
-import Domain.Dto.RedirectDTO;
+import kr.klr.dnsserv.Dto.DNSRecordDTO;
+import kr.klr.dnsserv.Dto.RedirectDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 

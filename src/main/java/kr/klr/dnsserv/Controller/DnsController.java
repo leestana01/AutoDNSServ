@@ -1,8 +1,8 @@
-package Controller;
+package kr.klr.dnsserv.Controller;
 
-import Domain.Dto.DNSRecordDTO;
-import Domain.Dto.RedirectDTO;
-import Service.DnsService;
+import kr.klr.dnsserv.Dto.DNSRecordDTO;
+import kr.klr.dnsserv.Dto.RedirectDTO;
+import kr.klr.dnsserv.Service.DnsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
