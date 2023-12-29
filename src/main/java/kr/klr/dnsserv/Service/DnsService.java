@@ -2,6 +2,7 @@ package kr.klr.dnsserv.Service;
 
 import kr.klr.dnsserv.Dto.DNSRecordDTO;
 import kr.klr.dnsserv.Dto.RedirectDTO;
+import kr.klr.dnsserv.Exception.NotRunnableException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class DnsService {
             Process process = processBuilder.start();
             process.waitFor();
         } catch (Exception e) {
-            System.out.println("error");
+            throw new NotRunnableException(scriptPath);
         }
     }
     public void addDNSRecord(DNSRecordDTO dnsRecordDTO){
